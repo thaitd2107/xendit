@@ -16,12 +16,6 @@ export class TasksService implements OnApplicationBootstrap {
     this.charactersService.consumeData();
   }
 
-  // @Timeout(1000)
-  // callOnceAfterServerStarted() {
-  //   console.log('Called once after 1 second');
-  //   this.charactersService.consumeData();
-  // }
-
   onApplicationBootstrap() {
     console.log('Starting consuming characters data');
     this.charactersService.consumeData().pipe(
