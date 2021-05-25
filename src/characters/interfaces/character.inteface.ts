@@ -1,5 +1,5 @@
 export interface Character {
-  id: number;
-  name: string;
-  description: string;
+  id?: number;
+  name?: string;
+  description?: string;
 }
