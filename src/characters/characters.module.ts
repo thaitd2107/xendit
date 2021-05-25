@@ -3,7 +3,7 @@ import { CharactersController } from './characters.controller';
 import { CharactersService } from './characters.service';
 
 @Module({
-  imports: [HttpModule, CacheModule.register({ ttl: null, max: 1000000 })],
+  imports: [HttpModule, CacheModule.register({ ttl: 3600, max: 1000000 })],
   controllers: [CharactersController],
   providers: [CharactersService],
   exports: [CacheModule, HttpModule],
